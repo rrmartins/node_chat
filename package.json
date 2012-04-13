@@ -1,0 +1,8 @@
+{
+  "name": "node-example",
+  "version": "0.0.1",
+  "dependencies": {
+    "now": "0.8.1",
+    "connect": "2.1.0"
+  }
+}
