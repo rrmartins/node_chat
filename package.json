@@ -1,8 +1,11 @@
 {
   "name": "node-example",
   "version": "0.0.1",
+  "engines":{
+    "node":"0.6.14"
+  },
   "dependencies": {
-    "now": "0.8.1",
-    "connect": "2.1.0"
+    "now": "0.8.1"
   }
+
 }
