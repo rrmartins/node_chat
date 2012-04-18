@@ -6,7 +6,13 @@ var server = require('http').createServer(function(req, response){
     response.end();
   });
 });
-server.listen(8181);
+
+//server.listen(8181);
+var port = process.env.PORT || 3000;
+server.listen(port, function() {
+  console.log("Listening on " + port);
+});
+
 var everyone = require("now").initialize(server);
 
 
