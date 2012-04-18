@@ -7,7 +7,7 @@ var server = require('http').createServer(function(req, response){
   });
 });
 server.listen(8081);
-var everyone = require("node_modules/now/lib/server.js").initialize(server);
+var everyone = require("now").initialize(server);
 
 
 everyone.connected(function(){
