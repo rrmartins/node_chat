@@ -9,6 +9,7 @@ var server = require('http').createServer(function(req, response){
 
 //server.listen(8181);
 var port = process.env.PORT || 3000;
+console.log(port);
 server.listen(port, function() {
   console.log("Listening on " + port);
 });
