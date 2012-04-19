@@ -28,5 +28,6 @@ everyone.disconnected(function(){
 
 everyone.now.distributeMessage = function(message){
 	console.log("mensagem "+message);
+	message = message.replace(/(<([^>]+)>)/ig,"");
 	everyone.now.receiveMessage(this.now.name, message);
 };
