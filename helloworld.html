@@ -11,7 +11,9 @@ $(document).ready(function(){
   now.receiveMessage = function(name, message){
     if (message.length < 1){
 	alert("mensagem vazia");
-    } else {
+    } else if (message.empty()){
+	alert("mensagem vazia");
+    }else  {
     	$("#messages").append("<br>" + name + ": " + message);
     }
   }
