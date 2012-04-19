@@ -9,7 +9,11 @@ $(document).ready(function(){
   
   now.name = prompt("Qual seu Nome?", "nome");  
   now.receiveMessage = function(name, message){
-    $("#messages").append("<br>" + name + ": " + message);
+    if (message.length < 1){
+	alert("mensagem vazia");
+    } else {
+    	$("#messages").append("<br>" + name + ": " + message);
+    }
   }
   
   $("#send-button").click(function(){
