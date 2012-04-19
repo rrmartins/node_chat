@@ -9,7 +9,7 @@ var server = require('http').createServer(function(req, response){
 
 //server.listen(8181);
 var port = process.env.PORT || 3000;
-console.log(port);
+//console.log(port);
 server.listen(port, function() {
   console.log("Listening on " + port);
 });
@@ -27,5 +27,6 @@ everyone.disconnected(function(){
 });
 
 everyone.now.distributeMessage = function(message){
+	console.log("mensagem "+message);
 	everyone.now.receiveMessage(this.now.name, message);
 };
